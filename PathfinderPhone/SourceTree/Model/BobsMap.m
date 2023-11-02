@@ -159,7 +159,7 @@ const int  staticMap[kMapHeight][kMapWidth] = {
    oldPen   = (HPEN)SelectObject (surface, nullPen);
 #endif
    
-   [[UIColor grayColor] setFill];
+   [[UIColor lightGrayColor] setFill];
    
    for (int y=0; y<mapData.mapHeight; y++)  {
       /*NSLog (@"%d %d %d %d %d %d %d %d %d %d ",
