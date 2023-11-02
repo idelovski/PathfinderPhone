@@ -262,9 +262,9 @@
 //----------------------------------------------------------------
 - (void)renderInView:(UIView *)view;  // void  CgaBob::Render (int cxClient, int cyClient, HDC surface)
 {
-   [self.bobsMap renderInView:view];  // (cxClient, cyClient, surface);  //render the map
-   
    [self.bobsBrain memoryRenderInView:view];  // m_BobsBrain.MemoryRender (cxClient, cyClient, surface);   //render the best route
+   
+   [self.bobsMap renderInView:view];  // (cxClient, cyClient, surface);  //render the map
    
    NSLog (@"renderInView:");
 #ifdef _NIJE_
