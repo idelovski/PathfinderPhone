@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		EB820E8C2AE574FF009874E9 /* RoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB820E8B2AE574FF009874E9 /* RoomView.m */; };
 		EB820E902AE5780F009874E9 /* BobsMap.m in Sources */ = {isa = PBXBuildFile; fileRef = EB820E8F2AE5780F009874E9 /* BobsMap.m */; };
+		EB87A9E02AF3D07E00778B63 /* 4Dummies in Resources */ = {isa = PBXBuildFile; fileRef = EB87A9DF2AF3D07E00778B63 /* 4Dummies */; };
 		EBBFF7332AE56F3900512913 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBFF7322AE56F3900512913 /* AppDelegate.m */; };
 		EBBFF7362AE56F3900512913 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBFF7352AE56F3900512913 /* ViewController.m */; };
 		EBBFF7392AE56F3900512913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBFF7372AE56F3900512913 /* Main.storyboard */; };
 		EBBFF73B2AE56F3B00512913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBFF73A2AE56F3B00512913 /* Assets.xcassets */; };
 		EBBFF73E2AE56F3B00512913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBFF73C2AE56F3B00512913 /* LaunchScreen.storyboard */; };
 		EBBFF7412AE56F3B00512913 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBFF7402AE56F3B00512913 /* main.m */; };
-		EBBFF7482AE56FD000512913 /* 4Dummies in Resources */ = {isa = PBXBuildFile; fileRef = EBBFF7472AE56FD000512913 /* 4Dummies */; };
 		EBCDFA2F2AE7BC86006AF30E /* BobsGenome.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCDFA2D2AE7BC85006AF30E /* BobsGenome.m */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +24,7 @@
 		EB820E8B2AE574FF009874E9 /* RoomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoomView.m; sourceTree = "<group>"; };
 		EB820E8E2AE5780F009874E9 /* BobsMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BobsMap.h; sourceTree = "<group>"; };
 		EB820E8F2AE5780F009874E9 /* BobsMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BobsMap.m; sourceTree = "<group>"; };
+		EB87A9DF2AF3D07E00778B63 /* 4Dummies */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 4Dummies; path = ../../Desktop/4Dummies; sourceTree = "<group>"; };
 		EBBFF72E2AE56F3900512913 /* PathfinderPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathfinderPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBFF7312AE56F3900512913 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EBBFF7322AE56F3900512913 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,7 +35,6 @@
 		EBBFF73D2AE56F3B00512913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBBFF73F2AE56F3B00512913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBBFF7402AE56F3B00512913 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EBBFF7472AE56FD000512913 /* 4Dummies */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 4Dummies; path = ../../../Desktop/4Dummies; sourceTree = "<group>"; };
 		EBCDFA2D2AE7BC85006AF30E /* BobsGenome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BobsGenome.m; sourceTree = "<group>"; };
 		EBCDFA2E2AE7BC85006AF30E /* BobsGenome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BobsGenome.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,7 +94,7 @@
 		EBBFF7252AE56F3900512913 = {
 			isa = PBXGroup;
 			children = (
-				EBBFF7472AE56FD000512913 /* 4Dummies */,
+				EB87A9DF2AF3D07E00778B63 /* 4Dummies */,
 				EBBFF7302AE56F3900512913 /* PathfinderPhone */,
 				EBBFF72F2AE56F3900512913 /* Products */,
 			);
@@ -178,7 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBBFF7482AE56FD000512913 /* 4Dummies in Resources */,
+				EB87A9E02AF3D07E00778B63 /* 4Dummies in Resources */,
 				EBBFF73E2AE56F3B00512913 /* LaunchScreen.storyboard in Resources */,
 				EBBFF73B2AE56F3B00512913 /* Assets.xcassets in Resources */,
 				EBBFF7392AE56F3900512913 /* Main.storyboard in Resources */,
