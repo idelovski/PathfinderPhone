@@ -6,10 +6,15 @@
 //  Copyright © 2023 Igor Delovski. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import  <UIKit/UIKit.h>
+
+#import  "BobsGenome.h"
+#import  "BobsMap.h"
 
 @interface ViewController : UIViewController
 
+// @property (nonatomic, retain)  BobsMap      *bobsMap;
+@property (nonatomic, retain)  BobsGenAlgo  *bobsGenome;
 
 @end
 
