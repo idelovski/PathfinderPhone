@@ -26,6 +26,12 @@
                                                            popSize:kPopulationSize
                                                       chromoLength:kCromosomeLength
                                                         geneLength:2];
+      self.allSetup = NO;
+      
+      [NSTimer scheduledTimerWithTimeInterval:0.016666666667
+                                       target:self selector:@selector(engineLoop:)
+                                     userInfo:nil
+                                      repeats:YES]; 
       
       NSLog (@"ViewController: initWithCoder:");
    }
@@ -48,6 +54,20 @@
    [self.bobsGenome epochLoop];
    
    [self.view setNeedsDisplay];
+
+   self.allSetup = YES;
+}
+
+#pragma mark -
+
+- (void)engineLoop:(id)info
+{
+   if (self.allSetup)  {
+      if ([self.bobsGenome started])  {
+         [self.bobsGenome epochLoop];
+         [self.view setNeedsDisplay];
+      }
+   }
 }
 
 @end

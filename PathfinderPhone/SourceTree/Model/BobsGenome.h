@@ -10,10 +10,10 @@
             
 #import  "BobsMap.h"
 
-#define  kCrossoverRate      .7
-#define  kMutationRate       .001
-#define  kPopulationSize  140.
-#define  kCromosomeLength  70.
+#define  kCrossoverRate       .7
+#define  kMutationRate        .001
+#define  kPopulationSize   140.
+#define  kCromosomeLength  128.
 
 NS_ASSUME_NONNULL_BEGIN
 

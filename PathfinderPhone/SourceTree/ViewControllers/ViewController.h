@@ -16,5 +16,7 @@
 // @property (nonatomic, retain)  BobsMap      *bobsMap;
 @property (nonatomic, retain)  BobsGenAlgo  *bobsGenome;
 
+@property (nonatomic, assign)  BOOL          allSetup;
+
 @end
 
