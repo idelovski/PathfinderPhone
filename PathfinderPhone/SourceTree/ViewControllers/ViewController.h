@@ -18,5 +18,11 @@
 
 @property (nonatomic, assign)  BOOL          allSetup;
 
+@property (nonatomic, retain)  UIButton  *startButton;
+@property (nonatomic, retain)  UILabel   *generationLabel;
+
+- (void)crateUIObjects;
+- (void)placeUIObjects;
+
 @end
 

@@ -292,7 +292,7 @@
 }
 - (void)stop;     // {m_bBusy = false;}
 {
-   self.busy = YES;
+   self.busy = NO;
 }
 
 @end

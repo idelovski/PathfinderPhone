@@ -65,7 +65,7 @@ const int  staticMap[kMapHeight][kMapWidth] = {
    BobsMapData  mapData = self.mapData;
    
    CGFloat  xBorder = 16;
-   CGFloat  yBorder = 48;
+   CGFloat  yBorder = 64;
    CGRect   viewFrame = view.bounds;
    
    CGFloat  blockSizeX = (viewFrame.size.width - 2*xBorder)/mapData.mapWidth;
@@ -142,7 +142,7 @@ const int  staticMap[kMapHeight][kMapWidth] = {
    BobsMapData  mapData = self.mapData;
    
    CGFloat  xBorder = 16;
-   CGFloat  yBorder = 48;
+   CGFloat  yBorder = 64;
    CGRect   viewFrame = view.bounds;
    
    CGFloat  blockSizeX = (viewFrame.size.width - 2*xBorder)/mapData.mapWidth;
