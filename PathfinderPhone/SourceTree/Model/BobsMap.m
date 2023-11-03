@@ -248,6 +248,9 @@ const int  staticMap[kMapHeight][kMapWidth] = {
       }//end switch
       
       memory->mapMemory[posY][posX] = 1;      //mark the route in the memory array
+      
+      if ((posX == mapData.idxEndX) && (posY == mapData.idxEndY))
+         break;
    }//next direction
    
    //now we know the finish point of Bobs journey, let's assign
