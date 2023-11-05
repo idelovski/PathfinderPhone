@@ -111,6 +111,17 @@
       baby1.vector.vec[i] = dad.vector.vec[i];
       baby2.vector.vec[i] = mum.vector.vec[i];
    }
+   
+   if (!(cp % 2))  // this fails if self.geneLength != 2
+       cp++;
+   if ([baby1 checkUselessMovesAtIndex:cp])  {
+      baby1.vector.vec[cp-1] = [Genome randomIntFrom:0 to:1];
+      baby1.vector.vec[cp-0] = [Genome randomIntFrom:0 to:1];
+   }
+   if ([baby2 checkUselessMovesAtIndex:cp])  {
+      baby1.vector.vec[cp-1] = [Genome randomIntFrom:0 to:1];
+      baby1.vector.vec[cp-0] = [Genome randomIntFrom:0 to:1];
+   }
 }
 //-----------------------------------Run----------------------------------
 //
@@ -317,8 +328,30 @@
 
 - (void)clear;
 {
-   for (int i=0; i<self.vector.length; i++)
+   for (int i=0; i<self.vector.length; i++)  {
       self.vector.vec[i] = [Genome randomIntFrom:0 to:1];
+      if ([self checkUselessMovesAtIndex:i])
+         i -= 2;
+   }
+}
+
+// This is verbose but obvious, could have been terse but non obvious
+
+- (BOOL)checkUselessMovesAtIndex:(int)idx
+{
+   if ((idx >= 3) && (idx < self.vector.length) && (idx%2))  {
+      int prevMove = self.vector.vec[idx-3] * 2 + self.vector.vec[idx-2];
+      int thisMove = self.vector.vec[idx-1] * 2 + self.vector.vec[idx-0];
+      
+      switch (prevMove)  {
+         case  kBobMoveNorth:  if (thisMove == kBobMoveSouth)  return (YES);  break;
+         case  kBobMoveSouth:  if (thisMove == kBobMoveNorth)  return (YES);  break;
+         case  kBobMoveEast:  if (thisMove == kBobMoveWest)  return (YES);  break;
+         case  kBobMoveWest:  if (thisMove == kBobMoveEast)  return (YES);  break;
+      }
+   }
+   
+   return (NO);
 }
 
 - (void)dealloc

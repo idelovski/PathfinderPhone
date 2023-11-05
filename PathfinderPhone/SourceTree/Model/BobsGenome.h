@@ -38,7 +38,8 @@ typedef struct  _Vector
 
 - (id)initWithGeneLength:(int)geneLen;
 
-- (void)clear;                 // memset(vec, 0, sizeof(int) * length);
+- (void)clear;
+- (BOOL)checkUselessMovesAtIndex:(int)idx;
 
 + (int)randomIntFrom:(int)from to:(int)to;
 + (double)randomFloat;
